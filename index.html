@@ -2,15 +2,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>做人要有良心</title>
+<title>企业更要有良心</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<!--imports jquery-->
-<script>window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"><\/script>')</script>
+<script src="jquery.js"></script>
+<script src="source/jquery.swipebox.js"></script>
 <!--imports jquery form plugin-->
 <script type="text/javascript" src="js/jquery.form.js"></script>
-<!--imports twitter feed plugin-->
-<script type="text/javascript" src="js/jquery.tweet.js"></script>
 <!--imports cycle slider plugin-->
 <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
 <!--imports easing plugin-->
@@ -35,8 +33,13 @@
 <!--[if IE 7]><link href="css/ie7.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="css/dblue.css" media="screen" />
+<link rel="stylesheet" href="source/swipebox.css">
 <script type="text/javascript" src="js/options.js"></script>
-
+    <script type="text/javascript">
+        jQuery(function($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
 
 </head>
 
@@ -45,10 +48,10 @@
 	<div id="left" class="plates">
 		<ul id="navigation">
 			<li><a class="active" href="#home">首页</a></li>		
-			<li><a href="fuckbrj.html">QQ群信息</a></li>
             <li><a href="#about">文件下载</a></li>
-			<li><a href="#portfolio">相关案例</a></li>
+			<li><a href="#portfolio">相关报道</a></li>
 			<li><a href="#blog">图片浏览</a></li>
+            <li><a href="fuckbrj.html">QQ群聊天记录</a></li>
 		</ul>
 		
 		<div>
@@ -91,13 +94,27 @@
 
 
     <div id="about" class="page">
-    <h2>文件下载</h2>
-    <ol>
-        <li><a href="doc/查找的百瑞景变电站相关资料.doc">查找的百瑞景变电站相关资料.doc</a> </li>
-        <li><a href="doc/省环保厅结论分析.doc">省环保厅结论分析.doc</a> </li>
-        <li><a href="doc/武汉洪山变电站扩建工程环境影响报告表.doc">武汉洪山变电站扩建工程环境影响报告表.doc</a> </li>
-        <li><a href="doc/维权呼吁.doc">维权呼吁.doc</a> </li>
-    </ol>
+        <h2>相关信息</h2>
+        <div class="two-third">
+            <h3>文件下载</h3>
+            <ol>
+                <li><a href="doc/查找的百瑞景变电站相关资料.doc">查找的百瑞景变电站相关资料.doc</a> </li>
+                <li><a href="doc/省环保厅结论分析.doc">省环保厅结论分析.doc</a> </li>
+                <li><a href="doc/武汉洪山变电站扩建工程环境影响报告表.doc">武汉洪山变电站扩建工程环境影响报告表.doc</a> </li>
+                <li><a href="doc/维权呼吁.doc">维权呼吁.doc</a> </li>
+                <li><a href="http://hflx.whjjjc.org.cn/application/gzhd/tsdj/tsztche.jsp" target="_blank">武汉，行风连线，行风投诉</a></li>
+            </ol>
+        </div>
+        <div class="one-third last">
+            <h3>联系信息</h3>
+            <ul>
+                <li>市长热线：12345    外地加：02712345</li>
+                <li>市环保局：85808056</li>
+                <li>市治庸办：82401213</li>
+                <li>市国土资源和规划局：82700055</li>
+            </ul>
+        </div>
+
     </div><!-- end about page -->
 
 
@@ -130,7 +147,52 @@
     <div id="contact" class="page">
         <h2>图片浏览</h2>
 
-    </div><!-- end contact page -->
+        <a rel="gallery-1" href="big/2013.12.21-16.25.09.007.jpg" class="swipebox">
+            <img src="small/2013.12.21-16.25.09.007.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/2013.12.21-16.28.23.399.jpg" class="swipebox">
+            <img src="small/2013.12.21-16.28.23.399.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/2013.12.21-16.28.57.567.jpg" class="swipebox">
+            <img src="small/2013.12.21-16.28.57.567.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/2013.12.21-16.31.44.534.jpg" class="swipebox">
+            <img src="small/2013.12.21-16.31.44.534.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/2013-05-07-15-33-21-368.jpg" class="swipebox">
+            <img src="small/2013-05-07-15-33-21-368.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/IMG_0211.jpg" class="swipebox">
+            <img src="small/IMG_0211.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/IMG_0645.jpg" class="swipebox">
+            <img src="small/IMG_0645.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/QQ图片20131019113306.jpg" class="swipebox">
+            <img src="small/QQ图片20131019113306.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/QQ图片20131023091211.jpg" class="swipebox">
+            <img src="small/QQ图片20131023091211.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/QQ图片20131023091304.jpg" class="swipebox">
+            <img src="small/QQ图片20131023091304.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/QQ图片20131023215558.jpg" class="swipebox">
+            <img src="small/QQ图片20131023215558.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/QQ图片20131023215606.jpg" class="swipebox">
+            <img src="small/QQ图片20131023215606.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/QQ图片20131023215612.jpg" class="swipebox">
+            <img src="small/QQ图片20131023215612.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/变电站.jpg" class="swipebox">
+            <img src="small/变电站.jpg" alt="image">
+        </a>
+        <a rel="gallery-1" href="big/变电站2.jpg" class="swipebox">
+            <img src="small/变电站2.jpg" alt="image">
+        </a>
+     </div><!-- end contact page -->
 
     </div><!-- end right -->
 </body>
